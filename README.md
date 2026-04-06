@@ -1,2 +1,2 @@
 # mycookies.com
-web-desing СПбГУПТД
+Удовкин Павел 3-МД-15
