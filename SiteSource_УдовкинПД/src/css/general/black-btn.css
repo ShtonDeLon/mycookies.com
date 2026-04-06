@@ -1,0 +1,20 @@
+.black-btn {
+    flex: 1;
+    bottom: 58px;
+    width: 100%;
+    min-height: 65px;
+    border: none;
+
+    font-size: 20px;
+    letter-spacing: 20%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.black-btn:hover {
+    cursor: pointer;
+    color: #FFADAD;
+    transition: all 0.3s ease;
+}
