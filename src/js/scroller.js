@@ -10,12 +10,11 @@ function force_scroll_sideways(element) {
     let magnitude;
 
     if (x === 0) {
-      magnitude = y > 0 ? -30 : 30;
+      magnitude = y > 0 ? 30 : -30;
     } else {
       magnitude = x;
     }
 
-    //console.log({ x, y, magnitude });
     element.scrollBy({
       left: magnitude
     });

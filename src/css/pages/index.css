@@ -217,46 +217,41 @@ input::placeholder {
 }
 
 .product-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     height: 295px;
-    width: 200px;
+    min-width: 200px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) repeat(2, 40px);
     border: solid 2px #FFADAD;
+    background: linear-gradient(white, white);
     border-radius: 5px;
 }
 
-.product-item-container {
-    position: relative;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    height: 196px;
-    width: 196px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    border-radius: 5px 5px 0 0;
-    border-bottom: solid 2px #FFADAD;
-    transition: all 0.3s linear;
-}
-
-.product-item-container:hover {
+.product-item:hover{
     cursor: pointer;
     background: linear-gradient(white, #FFD9D9);
-    transition: all 0.3s linear;
 }
 
 .product-item-title {
     font-size: 14px;
+    height: 32px;
+    grid-column: 1 / 6;
+    grid-row: 1;
+    margin: auto;
     display: flex;
     align-items: center;
-    height: 32px;
+}
+
+.product-item img {
+    grid-column: 1 / 6;
+    grid-row: 1 / 7;
+    margin: auto;
 }
 
 .product-item-star {
-    position: absolute;
+    position: relative;
+    grid-column: 5;
+    grid-row: 5;
+
     stroke: black;
     stroke-width: 1px;
     stroke-linecap: round;
@@ -274,6 +269,9 @@ input::placeholder {
 }
 
 .product-item-price {
+    grid-column: 1 / 6;
+    grid-row: 6;
+    border-top: solid 2px #FFADAD;
     font-size: 14px;
     display: flex;
     flex-direction: column;
@@ -292,8 +290,6 @@ input::placeholder {
     color: #FFADAD;
     transition: all 0.3s ease;
 }
-
-
 
 .site-footer {
     position: fixed;
@@ -318,5 +314,5 @@ input::placeholder {
 .site-url {
     text-align: center;
     color: black;
-    letter-spacing: 17%;
+    letter-spacing: 3px;
 }
