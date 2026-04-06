@@ -1,0 +1,102 @@
+h1 {
+    font-family: 'Avenir Schoolbook';
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+    font-size: 24px;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFADAD;
+    z-index: 1000;
+    border-radius: 0px 0px 10px 10px;
+    padding: 8px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.search-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.search-wrapper {
+    flex: 1;
+}
+
+.search-input {
+    width: 100%;
+    padding: 5px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #FFADAD;
+    color: black;
+}
+
+.search-input::placeholder {
+    color: black;
+    font-weight: 800;
+    opacity: 0.8;
+}
+
+.search-with-icon .form-control {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 30px;
+    background-color: #FFADAD;
+    width: 100%;
+}
+
+.search-with-icon .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 25%;
+    color: black;
+    font-size: 0.8rem;
+    z-index: 10;
+    transform: scaleX(-1);
+}
+
+.header-btn {
+    padding: 4px;
+    font-size: 16px;
+    height: 32px;
+    width: 100%;
+    max-width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    color: black;
+    background-color: #FFADAD;
+
+    transition: all 0.3s ease;
+}
+
+.header-btn:hover {
+    cursor: pointer;
+
+    color: white;
+    background-color: black;
+
+    transition: all 0.3s ease;
+}
+
+.entry-btn-text {
+    text-align: center;
+    font-size: 16px;
+}

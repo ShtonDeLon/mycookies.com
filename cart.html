@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mycookies">
+    <meta name="keywords" content="доставка печенья, mycookies, питер, спб, печенье">
+    <title>CartPage</title>
+    <link rel="stylesheet" href="src/css/general/black-btn.css">
+    <link rel="stylesheet" href="src/css/general/constructor.css">
+    <link rel="stylesheet" href="src/css/general/footer.css">
+    <link rel="stylesheet" href="src/css/general/header.css">
+    <link rel="stylesheet" href="src/css/pages/cart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="./index.html" class="logo">
+                <h1>mycookies.com</h1>
+            </a>
+
+            <div class="search-with-icon">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" class="form-control" placeholder="Поиск">
+            </div>
+
+            <button class="svg-btn" onclick="window.location.href='cart.html'">
+                <i class="bi bi-cart-fill"></i>
+            </button>
+
+            <button class="header-btn" onclick="window.location.href='404.html'">
+                Войти
+            </button>
+        </div>
+    </header>
+
+    <div class="main-section">
+        <div class="cart-place">
+            <h2>Корзина</h2>
+            <div class="product-cards-container">
+                <div class="product-card">
+                    <div class="product-card-image-container">
+                        <img class="product-card-image" src="src/imgs/cookies/chocolate.png" alt="Cookie image"
+                            height="100%">
+                    </div>
+
+                    <div class="product-card-info-container">
+                        <p class="product-card-title-container">Вот такая вот печенька</p>
+
+                        <div class="product-card-structure">
+                            <p class="">Состав:</p>
+                            <ul>
+                                <li>Много какао</li>
+                                <li>Бисквитное тесто</li>
+                                <li>Кусочки шоколада</li>
+                            </ul>
+                        </div>
+
+                        <div class="product-card-priceholder">
+                            <div class="priceholder-change-count">
+                                <p class="product-card-count-btn">-</p>
+                                <p class="product-card-count">1</p>
+                                <p class="product-card-count-btn">+</p>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                            <p class="product-card-final-price">199Р</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+                    <div class="product-card-image-container">
+                        <img class="product-card-image" src="src/imgs/cookies/pinkme.png" alt="Cookie image"
+                            height="100%">
+                    </div>
+
+                    <div class="product-card-info-container">
+                        <p class="product-card-title-container">Пикми кук</p>
+
+                        <div class="product-card-structure">
+                            <p class="">Состав:</p>
+                            <ul>
+                                <li>Кремовая помадка</li>
+                                <li>Песочное тесто</li>
+                                <li>Сахарные гранулы</li>
+                            </ul>
+                        </div>
+
+                        <div class="product-card-priceholder">
+                            <div class="priceholder-change-count">
+                                <p class="product-card-count-btn">-</p>
+                                <p class="product-card-count">2</p>
+                                <p class="product-card-count-btn">+</p>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                            <p class="product-card-final-price">399Р</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="button-handler">
+                <button class="black-btn" onclick="window.location.href='index.html'">Вернуться в каталог</button>
+                <button class="black-btn" id="middle-btn" onclick="window.location.href='404.html'">Оформить
+                    заказ</button>
+            </div>
+        </div>
+
+        <div class="constructor">
+            <div class="constructor-content">
+                <h2>#19FF22</h2>
+                <div class="gif-handler">
+                    <img src="src/gifs/cook.gif" alt="Cooking the page" height="256" width="256">
+                </div>
+            </div>
+            <button class="black-btn" onclick="window.location.href='404.html'">Добавить печенье</button>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="markets-container">
+                <i class="bi bi-apple" onclick="window.location.href='https://www.apple.com/app-store/';"></i>
+                <i class="bi bi-google-play" onclick="window.location.href='https://play.google.com/';"></i>
+                <i class="bi bi-android" onclick="window.location.href='https://www.rustore.ru/';"></i>
+            </div>
+
+            <div class="site-url"><a href="./index.html">mycookies.com</a></div>
+
+            <div class="socials-container">
+                <i class="bi bi-tiktok" onclick="window.location.href='https://www.tiktok.com';"></i>
+                <i class="bi bi-youtube" onclick="window.location.href='https://www.youtube.com';"></i>
+                <i class="bi bi-instagram" onclick="window.location.href='https://www.instagram.com';"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
